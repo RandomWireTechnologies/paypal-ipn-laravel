@@ -73,7 +73,7 @@ class PayPalIpn
      */
     public function getEnvironment()
     {
-        return Config::get('paypal-ipn-laravel::environment', 'sandbox');
+        return Config::get('paypal.environment', 'sandbox');
     }
 
     /**
@@ -83,7 +83,7 @@ class PayPalIpn
      */
     public function setEnvironment($environment)
     {
-        Config::set('paypal-ipn-laravel::environment', $environment);
+        Config::set('paypal.environment', $environment);
     }
 
     /**
